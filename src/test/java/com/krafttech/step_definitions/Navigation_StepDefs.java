@@ -26,4 +26,9 @@ public class Navigation_StepDefs {
     public void goToMyProfileMenuAndGetTheTextOfUserProfile() {
         System.out.println("Then");
     }
+
+
+
 }
+
+
