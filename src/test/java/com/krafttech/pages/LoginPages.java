@@ -1,6 +1,6 @@
 package com.krafttech.pages;
 
-import com.krafttechnologie.utilities.ConfigurationReader;
+import com.krafttech.utilities.ConfigurationReader;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 

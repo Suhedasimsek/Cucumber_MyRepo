@@ -1,10 +1,12 @@
 package com.krafttech.pages;
 
-import com.krafttechnologie.utilities.BrowserUtils;
-import com.krafttechnologie.utilities.Driver;
+import com.krafttech.utilities.BrowserUtils;
+import com.krafttech.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
+
+import java.util.List;
 
 public class ProfilePage extends BasePage {
     @FindBy(xpath = "//button[.='Edit Profile'] ")
@@ -64,6 +66,11 @@ public class ProfilePage extends BasePage {
     @FindBy(xpath = "//input[@id='email']")
     public WebElement profilEmail_loc;
 
+    @FindBy(xpath = "(//span[.='My Profile'])[2]")
+    public WebElement myProfileBtn;
+
+    @FindBy(xpath = "//a[@class='nav-link collapsed']")
+    public List<WebElement> profileOptions;
 
     public void profileTabs(String tabName){
         driver=Driver.get();

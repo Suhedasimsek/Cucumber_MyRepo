@@ -1,7 +1,7 @@
 package com.krafttech.pages;
 
-import com.krafttechnologie.utilities.BrowserUtils;
-import com.krafttechnologie.utilities.Driver;
+import com.krafttech.utilities.BrowserUtils;
+import com.krafttech.utilities.Driver;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
