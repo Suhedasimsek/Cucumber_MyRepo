@@ -1,5 +1,5 @@
 Feature: Navigate menu with parametre
-
+  @rerun
   Scenario: user navigate to edit profile menu
     Given User should be on the login page
     When User should input "mike@gmail.com" and "mike1234"
@@ -20,7 +20,7 @@ Feature: Navigate menu with parametre
     Then The user name should be "Morgan Freeman"
     When The user navigates to "Dashboard" menu
     Then The user should be able to see home name as "Dashboard"
-@wip
+
   Scenario Outline: Different user <name> navigates to  <tab> menu
     Given User should be on the login page
     When User should input "<userEmail>" and "<password>"

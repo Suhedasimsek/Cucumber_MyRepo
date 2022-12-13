@@ -73,5 +73,12 @@ public class Login_StepDefs {
         Assert.assertEquals(expectedName,actualName);
 
     }
+    @Then("The warning message contains {string}")
+    public void the_warning_message_contains(String expectedWarningMessage) {
+        BrowserUtils.waitFor(1);
+        String actualWarningMessage = loginPages.getWarningMessageText(expectedWarningMessage);
+        Assert.assertEquals(expectedWarningMessage,actualWarningMessage);
+    }
+
 }
 
