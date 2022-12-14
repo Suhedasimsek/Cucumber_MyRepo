@@ -18,7 +18,7 @@ public class LoginPages extends BasePage {
     public WebElement submitButton_loc;
 
     @FindBy(xpath = "//*[contains(text(),'Email address or password is incorrect')]")
-    public WebElement warningMessage_loc;
+    public WebElement  warningMessage_loc;
 
 
     public void loginUser(){
