@@ -13,6 +13,7 @@ Feature: Krafttech Log in Test
     When The user enters Sebastian credentials
     Then The user should be able to login
 @John
+@wip
   Scenario: Login as John Nash
 
     When The user enters John Nash credentials

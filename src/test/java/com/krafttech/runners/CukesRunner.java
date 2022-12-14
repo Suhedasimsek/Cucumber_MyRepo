@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
         glue = "com/krafttech/step_definitions",
        // dryRun = true// sadece undefined stepleri almak istiyosak kullanırız.Java kodları çalıştırmaz.
         dryRun = false,
-        tags ="@rerun"
+        tags ="@wip"
         )
 public class CukesRunner {
 }
