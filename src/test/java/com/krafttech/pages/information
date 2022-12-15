@@ -1,4 +1,6 @@
-git rev-parse --abbrev-ref HEAD  current branshı görmek içingit rev-parse --abbrev-ref HEAD
+git rev-parse --abbrev-ref HEAD  current branshı görmek için
+git checkout -b "parallelexecution" terminale yazarsan yeni branş oluşturur
+Ya da yeni branş git master sag tık new bransh
 mvn verify -Dbrowser=firefox  firefoxla mvn verify -Dbrowser=firefox
 
 PARARLEL TEST
