@@ -7,7 +7,7 @@ Feature: Krafttech Log in Test
 
     When The user enters Mike credentials
     Then The user should be able to login
-@Sebastian @smoke
+@wip @smoke
   Scenario: Login as Sebastian
 
     When The user enters Sebastian credentials
