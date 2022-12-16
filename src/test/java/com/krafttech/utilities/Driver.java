@@ -77,7 +77,7 @@ public class Driver {
                     chromeOptions.setCapability("platform",Platform.ANY);
 
                     try{
-                        driverPool.set(new RemoteWebDriver(new URL("http://localhost:8090/wd/hub"),chromeOptions));
+                        driverPool.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),chromeOptions));//http://3.86.251.4:4444/wd/hub başkasının bilgisayarına girmek için
                     }catch (MalformedURLException e){
                         e.printStackTrace();
                     }
@@ -88,7 +88,7 @@ public class Driver {
                     firefoxOptions.setCapability("platform", Platform.ANY);
 
                     try{
-                        driverPool.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),firefoxOptions));
+                        driverPool.set(new RemoteWebDriver(new URL("http://localhost:4444/wd/hub"),firefoxOptions));//http://3.86.251.4:4444/wd/hub
                     }catch (MalformedURLException e){
                         e.printStackTrace();
                     }
