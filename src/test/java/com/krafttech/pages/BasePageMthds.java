@@ -76,6 +76,7 @@ public class BasePageMthds {
      * @return
      */
     public String getText(By key) {
+
         return findElement(key).getText();
     }
 
@@ -85,7 +86,8 @@ public class BasePageMthds {
      * @return
      */
     public boolean checkElementText(By key, String text) {
-        return wait.until(ExpectedConditions.textToBe(key, text));
+
+        ,return wait.until(ExpectedConditions.textToBe(key, text));
     }
 
     /**
@@ -377,6 +379,18 @@ public class BasePageMthds {
     public void waitUntilVisible(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
     }
+     public static void verifyEquals(String actual, String expected){
+
+        if (actual.equals(expected)){
+            System.out.println("PASS");
+            System.out.println("actual = " + actual);
+            System.out.println("expected = " + expected);
+        }else {
+            System.out.println("FAIL");
+            System.out.println("actual = " + actual);
+            System.out.println("expected = " + expected);
+        }
+
 
     public void scrollToElement(WebElement element)
     {

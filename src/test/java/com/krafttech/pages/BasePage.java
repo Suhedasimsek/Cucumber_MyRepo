@@ -12,6 +12,7 @@ public abstract class BasePage {
     WebDriver driver;
 
     public BasePage(){
+
         PageFactory.initElements(Driver.get(),this);
     }
 
