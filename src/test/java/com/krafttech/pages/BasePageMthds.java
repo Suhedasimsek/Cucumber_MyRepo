@@ -87,7 +87,7 @@ public class BasePageMthds {
      */
     public boolean checkElementText(By key, String text) {
 
-        ,return wait.until(ExpectedConditions.textToBe(key, text));
+        return wait.until(ExpectedConditions.textToBe(key, text));
     }
 
     /**
