@@ -6,6 +6,12 @@ import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
+import javax.imageio.ImageIO;
+import javax.xml.transform.Result;
+import java.awt.image.BufferedImage;
+import java.io.IOException;
+import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -134,6 +140,27 @@ public class BrowserUtils {
         WebDriverWait wait = new WebDriverWait(Driver.get(), timeout);
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
+
+    /*public void qrCodeTest() throws IOException, NotFoundException {
+        String urlText="https://www.google.com/";
+        Driver.get().findElement(By.xpath("//textarea[@id='qrcode-field-text-text']")).sendKeys(urlText);
+        BrowserUtils.waitFor(3);
+        String qrCodeUrl = Driver.get().findElement(By.xpath("//img[@id='qrcode-preview-image']")).getAttribute("src");
+
+        URL url = new URL(qrCodeUrl);
+
+        BufferedImage bufferedImage = ImageIO.read(url);
+
+        LuminanceSource luminanceSource = new BufferedImageLuminanceSource(bufferedImage);
+        BinaryBitmap binaryBitmap = new BinaryBitmap(new HybridBinarizer(luminanceSource));
+
+        Result result = new MultiFormatReader().decode(binaryBitmap);
+        String textResult = result.getText();
+
+        System.out.println("textResult = " + textResult);
+        Driver.get().get(textResult);
+        Assert.assertEquals(Driver.get().getCurrentUrl(),urlText,"QR code control");
+    }*/
 
     /**
      * waits for backgrounds processes on the browser to complete
