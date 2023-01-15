@@ -23,9 +23,16 @@ public class Test_JDBC_metaData {
             System.out.println("kolon adı2: " + metaData.getColumnName(2));
             System.out.println("kolon adları: " + metaData.getColumnName(3)+" | "+metaData.getColumnName(4));
             int kolonSayisi=metaData.getColumnCount();
-            for (int i = 1; i <=kolonSayisi ; i++) {
+            for (int i = 1; i <=kolonSayisi ; i++) {// sütun adları
                 System.out.println("Kolon "+i + "=>" +metaData.getColumnName(i));
 
+
+            }
+            while (resultSet.next()) {//sütundaki bütün veriler
+                for (int i = 1; i <= metaData.getColumnCount(); i++) {
+                    System.out.print(resultSet.getString(i) + "            ");
+                }
+                System.out.println("");
 
             }
 

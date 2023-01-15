@@ -24,7 +24,8 @@ public class Test_JDBC_3 {
             System.out.println("resultSet.getString(2) = " + resultSet.getString(2));
             resultSet.first();//ilk
             System.out.println("resultSet.getString(2) = " + resultSet.getString(2));
-           // resultSet.beforeFirst();  resultSet.afterLast
+           // resultSet.beforeFirst(); //sütun adlarının olduğu satır
+            // resultSet.afterLast // pointerın son satır  sonrasına
             System.out.println("resultSet.getString(2) = " + resultSet.getString(2));
             resultSet.absolute(10);//sayıda verilen satır
             System.out.println("resultSet.getString(2) = " + resultSet.getString(2));
